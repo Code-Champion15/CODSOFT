@@ -9,7 +9,21 @@ public class number_game{
         int randomnbr=random.nextInt(100);
         System.out.println("the random number is:"+randomnbr);
         System.out.println("guess the number");
-        Scanner nbguess=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
+        int nbguess=scanner.nextInt();
         System.out.println(nbguess);
+        if(nbguess==randomnbr){
+            System.out.println("your guess is correct");
+        }
+        else{
+            if(nbguess>randomnbr){
+                System.out.println("your guess is too high");
+            }
+            else{
+                System.out.println("your guess is too low");
+            }
+        }
+        
+
     }
 }
