@@ -12,8 +12,8 @@ public class studentgradecalculator{
         int totale=0;
         for(int i=0;i<nbsub;i++){
             totale=totale+notes[i];
-
         }
+        System.out.println("total="+totale);
         double average=(double)totale/nbsub;
         System.out.println(average);
         int grade;
