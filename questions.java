@@ -1,9 +1,8 @@
 import java.util.*;
 public class questions{
-    private String qst;
+    protected String qst;
     ArrayList<String> choix;
-    private int repcorrecte;
-    private int userrep;
+    protected int repcorrecte;
 
     public void setQst(String qst){
         this.qst=qst;
@@ -21,17 +20,11 @@ public class questions{
         return repcorrecte;
     }
 
-    public void setUserrep(int userrep){
-        this.userrep=userrep;
-    }
     
-    public int getUserrep(){
-        return userrep;
-    }
-
     questions(String qst,ArrayList<String> choix,int repcorrecte){
         this.qst=qst;
         this.choix=choix;
         this.repcorrecte=repcorrecte;
     }
 }
+
