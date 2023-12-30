@@ -1,4 +1,4 @@
-public class courseBD{
+public class courseDB{
     private String code;
     private String title;
     private String description;
@@ -28,7 +28,7 @@ public class courseBD{
         this.capacity=capacity;
     }
     public int getCapacity(){
-        return code;
+        return capacity;
     }
     public void setSchedule(String schedule){
         this.schedule=schedule;
@@ -40,15 +40,17 @@ public class courseBD{
         this.availableslots=availableslots;
     }
     public int getAvailableslots(){
-        return availebleslots;
+        return availableslots;
     }
 
-    public courseBD(String code,String title,String description,int capacity,String schedule){
+    public courseDB(String code,String title,String description,int capacity,String schedule){
         this.code=code;
         this.title=title;
         this.description=description;
         this.capacity=capacity;
-        this.availableSlots=capacity;
+        this.schedule=schedule;
+        this.availableslots=capacity;
+       
     }
 
     public void incrementAvailableslots(){
